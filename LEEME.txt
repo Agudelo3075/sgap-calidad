@@ -1,0 +1,72 @@
+SGAP - Sistema de Gestion de Asistencia y Pagos para academias deportivas y de musica
+=======================================================================================
+Integrantes:
+- Jhoan Sebastián Agudelo Mejía
+- Juan Pablo Bedoya Payán
+
+QUE ES
+SGAP ayuda a una academia pequena a llevar dos cosas que hoy suele hacer en papel o en Excel:
+  1. La asistencia de sus estudiantes a clase (presente, tarde, ausente o con excusa).
+  2. Las mensualidades: recargos cuando un pago se atrasa y el pago anual con descuento.
+Tambien avisa cuando un estudiante acumula ausencias seguidas o tiene baja asistencia.
+Lo usaria el administrador o el docente de la academia.
+
+ESTRUCTURA DEL PROYECTO MAVEN
+  pom.xml                               -> Configuracion Maven y dependencias JUnit 5
+  src/main/java/                        -> Codigo fuente de la aplicacion
+    AplicacionSGAP.java                 -> Lanzador por defecto
+    co/edu/eam/sgap/                    -> Paquete principal (Calculadora, EstadoPago, AplicacionSGAP)
+    co/edu/eam/sgap/asistencia/         -> Modulo de asistencia (Control, Registro, Estado)
+  src/test/java/                        -> Suite de pruebas unitarias y de aceptacion (92 pruebas)
+    co/edu/eam/sgap/                    -> Pruebas de Calculadora, Consola y Criterios de Aceptacion
+    co/edu/eam/sgap/asistencia/         -> Pruebas de Control de Asistencia
+  Documento_Analisis_Pruebas_SGAP.docx  -> Documento formal de analisis de pruebas (formato Word)
+  SUSTENTACION_15_MINUTOS.md            -> Guion completo minuto a minuto para la sustentacion
+
+COMO EJECUTAR LAS PRUEBAS CON MAVEN
+  Linux / Mac:
+    ./mvnw test
+    (o si tiene Maven en su PATH: mvn test)
+
+  Windows (PowerShell / CMD):
+    .\mvnw.cmd test
+    (o si tiene Maven en su PATH: mvn test)
+
+  Para compilar y empaquetar el JAR ejecutable:
+    ./mvnw clean package
+    java -jar target/sgap-aceptacion-1.0.0.jar
+
+COMO EJECUTAR LA CONSOLA MANUALMENTE (Sin Maven)
+  Linux / Mac:
+    mkdir -p out
+    javac -encoding UTF-8 -d out $(find src/main/java -name "*.java")
+    java -cp out AplicacionSGAP
+
+  Windows (PowerShell):
+    mkdir out
+    javac -encoding UTF-8 -d out (Get-ChildItem -Recurse -Filter *.java src/main/java).FullName
+    java -cp out AplicacionSGAP
+
+COMANDOS (cada uno seguido de Enter; "salir" para terminar)
+  registrar nombre;AAAA-MM-DD;ESTADO      ESTADO: PRESENTE, TARDE, AUSENTE o JUSTIFICADO
+  corregir nombre;AAAA-MM-DD;ESTADO       cambia un registro que ya existe
+  porcentaje nombre                       porcentaje de asistencia y si cumple el minimo
+  alerta nombre                           dice si hay que avisar al acudiente
+  riesgo                                  lista los estudiantes con baja asistencia
+  asistentes AAAA-MM-DD                   cuantos asistieron ese dia
+  recargo mensualidad;diasDeMora          recargo por pago atrasado
+  total mensualidad;diasDeMora            mensualidad mas recargo
+  anual mensualidad                       valor del pago anual
+  estadopago vencimiento;hoy              si un pago esta al dia, por vencer o en mora
+  ayuda | salir
+
+EJEMPLO DE SESION (las lineas que empiezan con > las escribe el usuario)
+  > registrar Ana;2026-11-01;PRESENTE
+  OK
+  > registrar Ana;2026-11-02;AUSENTE
+  OK
+  > porcentaje Ana
+  Asistencia de Ana: 50.0 % (NO cumple el minimo de 80.0 %)
+  > recargo 80000;10
+  Recargo por mora: 4000.00
+  > salir
