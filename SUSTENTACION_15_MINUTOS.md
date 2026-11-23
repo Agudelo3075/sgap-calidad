@@ -6,8 +6,8 @@
 ---
 
 ## 👥 DATOS DEL EQUIPO Y CONDICIONES OBLIGATORIAS
-* **Integrante 1:** Jhoan Sebastián Agudelo Mejía
-* **Integrante 2:** Juan Pablo Bedoya Payán
+* **Integrante 1:** Jhoan Sebastián Agudelo Mejía (Cód. Estudiantil: 240420242064)
+* **Integrante 2:** Juan Pablo Bedoya Payán (Cód. Estudiantil: 240420242060)
 * **Tiempo asignado:** 7 a 15 minutos (Estructurado con precisión pedagógica para 13 a 14 minutos).
 * **Modalidad de Entrega:** Video pregrabado alojado en **Google Drive** (compartido con permisos de lectura para el docente) o en **YouTube en modo Oculto (Unlisted)**.
 

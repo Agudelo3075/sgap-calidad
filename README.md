@@ -9,8 +9,8 @@
 ---
 
 ### 👥 Integrantes y Desarrolladores
-* **Jhoan Sebastián Agudelo Mejía** (`sebastian.agudelo@eam.edu.co`)
-* **Juan Pablo Bedoya Payán** (`juanp.bedoya@eam.edu.co`)
+* **Jhoan Sebastián Agudelo Mejía** (Cód. 240420242064 — `sebastian.agudelo@eam.edu.co`)
+* **Juan Pablo Bedoya Payán** (Cód. 240420242060 — `juanp.bedoya@eam.edu.co`)
 
 ---
 

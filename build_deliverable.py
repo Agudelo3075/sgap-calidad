@@ -293,8 +293,8 @@ html_content = """<!DOCTYPE html>
     <strong>Asignatura:</strong> Ingeniería de Software II (ISII) — Pruebas y Calidad de Software<br>
     <strong>Docente Evaluador:</strong> Mg. David Cano Baquero<br><br>
     <strong>Autores y Desarrolladores:</strong><br>
-    <strong>Jhoan Sebastián Agudelo Mejía</strong> (Código Estudiantil EAM)<br>
-    <strong>Juan Pablo Bedoya Payán</strong> (Código Estudiantil EAM)<br><br>
+    <strong>Jhoan Sebastián Agudelo Mejía</strong> (Cód. Estudiantil: 240420242064)<br>
+    <strong>Juan Pablo Bedoya Payán</strong> (Cód. Estudiantil: 240420242060)<br><br>
     <strong>Entorno Tecnológico:</strong> Java 17 LTS | JUnit Jupiter 5.10.2 | Apache Maven 3.10 | Surefire 3.1.2
   </div>
 
@@ -1544,13 +1544,13 @@ El desarrollo del Plan de Aseguramiento de Calidad de Software para el sistema S
   </thead>
   <tbody>
     <tr>
-      <td><strong>Jhoan Sebastián Agudelo Mejía</strong></td>
+      <td><strong>Jhoan Sebastián Agudelo Mejía</strong><br><small style="color: #64748b;">Cód. 240420242064</small></td>
       <td>50%</td>
       <td>Líder de Calidad y Pruebas Unitarias</td>
       <td>Diseño de técnicas de caja blanca (CFG, Complejidad Ciclomática de McCabe y caminos básicos); investigación y aplicación de Valores Límite en el cálculo financiero (RF-04); implementación de pruebas parametrizadas en <code>CalculadoraMensualidadTest</code>; redacción de análisis de riesgos financieros y normas ISO/IEC 25010; edición y estructuración del entregable PDF.</td>
     </tr>
     <tr>
-      <td><strong>Juan Pablo Bedoya Payán</strong></td>
+      <td><strong>Juan Pablo Bedoya Payán</strong><br><small style="color: #64748b;">Cód. 240420242060</small></td>
       <td>50%</td>
       <td>Líder de Automatización e Integración</td>
       <td>Estandarización de Apache Maven (<code>pom.xml</code> y Surefire); diseño e implementación de pruebas de integración para el módulo de control de asistencia (<code>ControlAsistenciaTest</code>); pruebas de sistema para comandos de consola (<code>AplicacionSGAPTest</code>); formulación de la Matriz de Trazabilidad (RTM); definición de la DoD y sustentación de niveles CMMI.</td>
