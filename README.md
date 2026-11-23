@@ -149,3 +149,4 @@ sgap-aceptacion/
 * **Fallos / Errores:** 0 (100% de éxito).
 * **Cobertura de Ramas (Branch Coverage):** 100% en la capa de lógica de negocio (`CalculadoraMensualidad` y `ControlAsistencia`).
 * **Tiempo Promedio de Ejecución:** Menor a 4.0 segundos en Surefire.
+

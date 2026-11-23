@@ -1773,3 +1773,4 @@ if os.path.exists(src_pdf):
     print(f"PDF generado y copiado como: {dest_pdf1} y {dest_pdf2}")
 else:
     print("Error: No se encontró el archivo PDF generado.")
+
