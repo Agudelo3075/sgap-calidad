@@ -6,49 +6,66 @@
 ---
 
 ## 👥 DATOS DEL EQUIPO Y CONDICIONES OBLIGATORIAS
-* **Integrante 1:** Jhoan Sebastián Agudelo Mejía (Cód. Estudiantil: 240420242064)
-* **Integrante 2:** Juan Pablo Bedoya Payán (Cód. Estudiantil: 240420242060)
-* **Tiempo asignado:** 7 a 15 minutos (Estructurado con precisión pedagógica para 13 a 14 minutos).
+* **Integrante 1:** Jhoan Sebastián Agudelo Mejía (Cód. Estudiantil: `240420242064`)
+* **Integrante 2:** Juan Pablo Bedoya Payán (Cód. Estudiantil: `240420242060`)
+* **Tiempo asignado:** 7 a 15 minutos (Planificado con precisión para 13 a 14 minutos).
 * **Modalidad de Entrega:** Video pregrabado alojado en **Google Drive** (compartido con permisos de lectura para el docente) o en **YouTube en modo Oculto (Unlisted)**.
 
 > [!IMPORTANT]
 > **REGLAS DE ORO DEL DOCENTE PARA EL VIDEO:**
 > 1. **Cámara a medio cuerpo obligatoria:** Ambos integrantes deben aparecer en cámara visible a medio cuerpo en sus respectivas intervenciones (no solo la cara o un avatar).
 > 2. **Participación equitativa obligatoria:** Ambos integrantes deben hablar activamente durante el video (50% del tiempo cada uno). *Integrante que no aparece o no habla, no recibe calificación.*
-> 3. **Explicación con valor añadido (No leer el documento):** Lo que dice el documento PDF se debe usar como punto de partida para **explicar el porqué, el cómo se investigó, qué anomalía resolvieron y qué implicaciones de ingeniería tiene**. Si el documento dice que algo es "riguroso", en el video se explica con datos técnicos exactos por qué es riguroso.
-> 4. **Demostración técnica en vivo:** Es obligatorio compartir pantalla y ejecutar en vivo en la terminal las pruebas con Maven (`./mvnw test`) mostrando los 92 tests en verde y una pequeña interacción con la consola de SGAP.
-> 5. **Verificación de permisos:** Probar el enlace del video en una ventana privada o de incógnito antes de enviar el correo final.
+> 3. **Apoyo visual en Diapositivas:** Se proyecta la presentación oficial en pantalla ([presentacion_sustentacion.html](file:///home/sebastian/Documentos/Pruebas_ingnieria/sgap-aceptacion/presentacion_sustentacion.html) o [Presentacion_SGAP_Sustentacion.pdf](file:///home/sebastian/Documentos/Pruebas_ingnieria/sgap-aceptacion/Presentacion_SGAP_Sustentacion.pdf)), siguiendo las marcas indicadas en este guion.
+> 4. **Explicación con valor añadido (No leer diapositivas ni el PDF):** Cada punto de la diapositiva sirve como ancla para **explicar el porqué de la ingeniería, cómo se investigó, qué anomalía resolvieron y qué implicaciones reales tiene**.
+> 5. **Demostración técnica en vivo:** Es obligatorio alternar la pantalla hacia la terminal y ejecutar en vivo las pruebas con Maven (`./mvnw test`) mostrando los 92 tests verdes y probar la consola de comandos.
+> 6. **Verificación de permisos:** Probar el enlace del video en una ventana privada o de incógnito antes de enviar el correo final.
 
 ---
 
-## ⏱️ CRONOGRAMA MINUTO A MINUTO (DISTRIBUCIÓN EQUITATIVA 50% / 50%)
+## ⏱️ CRONOGRAMA MINUTO A MINUTO Y MAPA DE DIAPOSITIVAS
 
-| Intervalo | Tiempo | Responsable | Sección del Trabajo | Enfoque de Explicación Añadida (Valor Agregado) | Apoyo Visual en Pantalla |
+| Intervalo | Tiempo | Responsable | Sección del Trabajo | 📺 Diapositiva en Pantalla | Enfoque de Explicación Añadida |
 | :---: | :---: | :--- | :--- | :--- | :--- |
-| **1** | 0:00 – 1:30 | **Jhoan Sebastián** | Presentación y Contexto del Negocio SGAP | Por qué las academias quiebran por Excel y planillas en papel; el impacto humano y financiero. | Cámara a medio cuerpo + Portada del PDF |
-| **2** | 1:30 – 3:30 | **Juan Pablo** | Estandarización Maven y Requisitos (RF-01 a RF-10) | Por qué se pasó de compilación manual a Maven; por qué Records inmutables; refinamiento de ambigüedades. | Estructura en IDE + `pom.xml` + Tabla de Requisitos |
-| **3** | 3:30 – 5:30 | **Jhoan Sebastián** | **Etapa 1:** Métodos de Prueba (Caja Negra y Caja Blanca) | Por qué BVA en mora (días 29, 30, 31); por qué la trampa de IEEE 754 en `double`; deducción matemática de McCabe $V(G)=4$. | Código `CalculadoraMensualidad` + Diagrama CFG |
-| **4** | 5:30 – 7:30 | **Juan Pablo** | **Etapa 2:** Plan de Pruebas, Trazabilidad y Defectos Reales | Por qué ISO 29119-3 y no un simple checklist; trazabilidad bidireccional; autopsia técnica de los 4 bugs reales resueltos. | Plan de pruebas + Tabla RTM + Bug Tracker |
-| **5** | 7:30 – 10:30 | **Ambos en Vivo** | **Etapa 3:** **Demostración en Vivo (Live Demo):** Maven y Consola | Explicación de qué hace Surefire en 3.8s por debajo; demostración interactiva en consola de casos límite y defensivos. | Terminal en pantalla completa en vivo |
-| **6** | 10:30 – 12:30 | **Juan Pablo** | **Etapa 4:** Calidad: ISO 25010, CMMI y Definition of Done | Por qué adecuación, fiabilidad y mantenibilidad; por qué honestamente Nivel 2 CMMI y no Nivel 3; el rol de la DoD. | Sección de calidad del PDF + DoD con 7 condiciones |
-| **7** | 12:30 – 14:00 | **Ambos** | Conclusiones, Lecciones Aprendidas y Cierre | La falacia de las pruebas intermedias; la calidad como cultura de proceso continuo; veredicto final. | Ambos en cámara a medio cuerpo |
+| **1** | 0:00 – 1:30 | **Jhoan Sebastián** | Introducción y Contexto del Negocio | **Diapositiva 1 & 2** | Por qué las academias quiebran por Excel y planillas en papel; el impacto humano y financiero. |
+| **2** | 1:30 – 3:30 | **Juan Pablo** | Estandarización y 10 Requisitos | **Diapositiva 3 & 4** | Por qué se pasó de compilación manual a Maven; por qué Records inmutables; desambiguación de requisitos y lección de edad. |
+| **3** | 3:30 – 5:30 | **Jhoan Sebastián** | **Etapa 1:** Caja Negra y Caja Blanca | **Diapositiva 5 & 6** | Por qué BVA en mora (días 29, 30, 31); por qué la trampa de IEEE 754 en `double`; deducción matemática de McCabe $V(G)=4$. |
+| **4** | 5:30 – 7:30 | **Juan Pablo** | **Etapa 2:** Plan de Pruebas y Defectos | **Diapositiva 7** | Por qué ISO 29119-3 y no un simple checklist; trazabilidad bidireccional; autopsia técnica de los 4 bugs reales resueltos. |
+| **5** | 7:30 – 10:30 | **Ambos en Vivo** | **Etapa 3:** **Demostración en Vivo** | **Diapositiva 8 & 💻 Terminal** | Explicación de qué hace Surefire en 3.8s por debajo; demostración interactiva en consola de casos límite y defensivos. |
+| **6** | 10:30 – 12:30 | **Juan Pablo** | **Etapa 4:** Calidad ISO 25010 y CMMI | **Diapositiva 9** | Por qué adecuación, fiabilidad y mantenibilidad; por qué honestamente Nivel 2 CMMI y no Nivel 3; plan de evolución. |
+| **7** | 12:30 – 14:00 | **Ambos** | DoD, Conclusiones y Cierre | **Diapositiva 10 & 🎥 Cámara** | Las 7 condiciones de la DoD; la falacia de las pruebas intermedias; la calidad como cultura continua; veredicto final. |
 
 ---
 
-## 🗣️ GUION TEXTUAL PASO A PASO (QUÉ DECIR EXACTAMENTE)
+## 🗣️ GUION TEXTUAL PASO A PASO CON MARCADORES DE DIAPOSITIVAS
 
 ---
 
 ### 📌 PARTE 1: INTRODUCCIÓN Y CONTEXTO DEL PROYECTO (0:00 – 1:30)
 * **Voz:** Jhoan Sebastián Agudelo Mejía
-* **En pantalla:** *Jhoan visible en cámara a medio cuerpo. Comparte pantalla mostrando la portada formal de `ISII_Grupo1_Entregable.pdf`.*
-* **Tono:** Seguro, profesional, académico y pausado.
+* **En pantalla:** *Jhoan visible en cámara a medio cuerpo + Proyección de Diapositiva 1.*
+
+```
+📺 [EN PANTALLA: DIAPOSITIVA 1 — PORTADA INSTITUCIONAL]
+Título: Plan de Aseguramiento de Calidad de Software (SQA) — SGAP
+Autores: Jhoan Sebastián Agudelo Mejía (240420242064) & Juan Pablo Bedoya Payán (240420242060)
+Docente: Mg. David Cano Baquero — Institución Universitaria EAM
+```
 
 > **Jhoan Sebastián:**  
 > *"Muy buenos días / tardes, profesor David Cano Baquero. Mi nombre es Jhoan Sebastián Agudelo Mejía y junto con mi compañero Juan Pablo Bedoya Payán, conformamos el equipo de aseguramiento de calidad del proyecto **SGAP: Sistema de Gestión de Asistencia y Pagos**, correspondiente a la asignatura Ingeniería de Software II de la Institución Universitaria EAM.*  
 >  
 > *En el documento entregable formalizamos el Plan de Calidad de SGAP, pero en esta sustentación queremos ir más allá de lo que está escrito y explicarle **las decisiones de ingeniería, las justificaciones técnicas y los hallazgos reales** que obtuvimos durante el proceso.*  
->  
+
+```
+📺 [▶ PASAR A DIAPOSITIVA 2: Problemática en Academias Formativas]
+Puntos clave en pantalla:
+- La crisis de la gestión en papel y Excel
+- Deserción Silenciosa (Riesgo R1)
+- Cobros Conflictivos y Arbitrarios (Riesgo R4)
+- Misión y Solución aportada por SGAP
+```
+
+> **Jhoan Sebastián (continúa):**  
 > *Para entender el valor de este software, debemos ubicarnos en la realidad operativa de las academias formativas (escuelas de fútbol, artes marciales, natación o academias de música). Tradicionalmente, estas instituciones gestionan su operación en planillas de papel o en libros de Excel compartidos. ¿Qué ocurre en la práctica? Identificamos dos problemas críticos:*  
 > * *Primero, **la deserción silenciosa:** cuando un estudiante empieza a faltar de manera continua, el docente o la administración solo se percatan semanas después, cuando el acudiente llama a retirar al alumno. Ya es tarde para intervenir.*  
 > * *Segundo, **los conflictos económicos por liquidaciones arbitrarias:** cuando un padre paga con retraso, la recepcionista cobra recargos a criterio personal o sumando intereses desproporcionados, lo que provoca discusiones y pérdida de clientes.*  
@@ -61,7 +78,14 @@
 
 ### 📌 PARTE 2: ESTANDARIZACIÓN TÉCNICA Y REQUISITOS (1:30 – 3:30)
 * **Voz:** Juan Pablo Bedoya Payán
-* **En pantalla:** *Juan Pablo visible en cámara a medio cuerpo. Comparte pantalla mostrando la estructura de carpetas en el IDE, el archivo `pom.xml` y el catálogo de requisitos RF-01 al RF-10.*
+* **En pantalla:** *Juan Pablo visible en cámara a medio cuerpo + Proyección de Diapositiva 3.*
+
+```
+📺 [▶ PASAR A DIAPOSITIVA 3: Arquitectura Maven y 10 Requisitos Refinados]
+Puntos clave en pantalla:
+- Decisiones de Arquitectura Técnica (Maven, Records inmutables, desacoplamiento)
+- Tabla de Requisitos RF-01 al RF-10 y sus reglas críticas de negocio
+```
 
 > **Juan Pablo:**  
 > *"Muchas gracias, Sebastián. Saludo cordial, profesor David.*  
@@ -77,6 +101,20 @@
 > * *Por ejemplo, en el **RF-01**, el requisito decía 'registrar asistencia'. Nosotros lo refinamos técnicamente exigiendo que si se intenta registrar al mismo estudiante dos veces en la misma jornada, el sistema no sobreescriba en silencio, sino que arroje una excepción explícita `IllegalStateException` preservando el estado original.*  
 > * *En el **RF-02**, desambiguamos el cálculo porcentual: aclaramos que una llegada 'TARDE' suma 100% como asistencia cumplida porque el alumno presenció la clase, y que una falta 'JUSTIFICADA' por excusa médica no se cuenta como inasistencia, sino que **se sustrae formalmente del divisor total evaluable**. Si un alumno tuvo 3 clases y justificó 1 médica, su porcentaje se calcula sobre base 2, evitando castigarlo injustamente.*  
 > * *Y en el **RF-03**, fijamos con rigor que la alerta temprana al acudiente se dispara cuando la racha de ausencias injustificadas es estrictamente mayor o igual a 3 en orden cronológico.*  
+
+```
+📺 [▶ PASAR A DIAPOSITIVA 4: Resultados Completos de la Guía Anterior]
+Puntos clave en pantalla:
+- Experimento de Límites de Edad (18 a 120 años): CP-01, CP-02 (Fallo), CP-03
+- Verificación vs. Validación
+- Matriz Error-Defecto-Fallo en SGAP y Simulación de Aceptación
+```
+
+> **Juan Pablo (continúa):**  
+> *Como punto de partida obligatorio, en la **Diapositiva 4** retomamos los resultados de la guía anterior:*  
+> * *El experimento de límites de edad demostró que las pruebas intermedias como la edad 25 aprobaban engañosamente, mientras que la frontera exacta de 18 años falló debido al defecto `edad > 18` en vez de `edad >= 18`.*  
+> * *Comprendimos la diferencia entre **Verificación** (¿construimos el software bien según la especificación?) y **Validación** (¿construimos el software correcto que necesita el cliente?).*  
+> * *Y aplicamos la matriz de Error, Defecto y Fallo a los dos riesgos centrales de SGAP: la mora financiera y las alertas de deserción.*  
 >  
 > *Ahora Sebastián profundizará en la Etapa 1: las técnicas de caja negra y caja blanca aplicadas a la lógica de negocio."*
 
@@ -84,7 +122,15 @@
 
 ### 📌 PARTE 3: MÉTODOS DE PRUEBA: CAJA NEGRA Y CAJA BLANCA (3:30 – 5:30)
 * **Voz:** Jhoan Sebastián Agudelo Mejía
-* **En pantalla:** *Jhoan en cámara + Código de `CalculadoraMensualidad.java`, tabla de valores límite y diagrama del Grafo de Flujo de Control (CFG).*
+* **En pantalla:** *Jhoan en cámara + Proyección de Diapositiva 5.*
+
+```
+📺 [▶ PASAR A DIAPOSITIVA 5: Caja Negra: BVA, Mitigación R4 y Tablas de Decisión]
+Puntos clave en pantalla:
+- La trampa del estándar IEEE 754 y la solución con BigDecimal + RoundingMode.HALF_UP
+- Tabla BVA de Fronteras de Mora: Día 0, Día 1, Día 29 (14.5%), Día 30 (15.0%), Día 31 (Tope)
+- Tabla de Decisión de Cartera (5 condiciones, 8 acciones)
+```
 
 > **Jhoan Sebastián:**  
 > *"Gracias, Juan Pablo. En la **Etapa 1**, el documento presenta la investigación teórica de particiones de equivalencia, valores límite (BVA), tablas de decisión y cobertura de McCabe. Pero aquí queremos explicar **por qué nuestras pruebas son verdaderamente rigurosas y qué problemas profundos resolvieron**.*  
@@ -99,8 +145,19 @@
 >   * *Probamos el **día 30**, la frontera crítica exacta donde la tasa alcanza el $15.0\%$.*  
 >   * *Probamos el **día 31**, el primer valor fuera del dominio lineal, verificando que la función conmute y se congele en el tope.*  
 >   * *Y probamos casos extremos como **40 y 100 días**, comprobando que el recargo siga congelado permanentemente en el 15%.*  
->  
-> *Pasando a **Caja Blanca**, seleccionamos el método real `calcularRecargoPorMora` en Java. En pantalla pueden observar el Grafo de Flujo de Control que modelamos, compuesto por 10 nodos y 12 aristas dirigidas.*  
+
+```
+📺 [▶ PASAR A DIAPOSITIVA 6: Caja Blanca: Grafo de Flujo (CFG) y McCabe V(G)=4]
+Puntos clave en pantalla:
+- Deducción matemática de Complejidad Ciclomática por 3 métodos:
+  1. Aristas y Nodos: 12 - 10 + 2 = 4
+  2. Nodos Predicado: 3 + 1 = 4
+  3. Regiones Planas: 3 cerradas + 1 abierta = 4
+- Tabla de los 4 Caminos Linealmente Independientes del Conjunto Base
+```
+
+> **Jhoan Sebastián (continúa):**  
+> *Pasando a **Caja Blanca** en la **Diapositiva 6**, seleccionamos el método real `calcularRecargoPorMora` en Java. En pantalla pueden observar el Grafo de Flujo de Control que modelamos, compuesto por 10 nodos y 12 aristas dirigidas.*  
 > * *Para determinar el número exacto de pruebas necesarias, calculamos la **Complejidad Ciclomática de Thomas McCabe**. Y la verificamos por tres caminos matemáticos independientes:*  
 >   * *1. Por fórmula de aristas y nodos: $V(G) = E - N + 2P = 12 - 10 + 2(1) = 4$.*  
 >   * *2. Por nodos predicado o puntos de decisión condicional: tenemos 3 condicionales (`mensualidad <= 0`, `diasMora < 0`, y `tasa > TOPE_RECARGO`). Por tanto: $V(G) = \text{Predicados} + 1 = 3 + 1 = 4$.*  
@@ -113,7 +170,15 @@
 
 ### 📌 PARTE 4: PLAN DE PRUEBAS, TRAZABILIDAD Y REGISTRO DE DEFECTOS (5:30 – 7:30)
 * **Voz:** Juan Pablo Bedoya Payán
-* **En pantalla:** *Juan Pablo en cámara + Documento PDF mostrando el Plan de Pruebas IEEE 829 / ISO 29119-3, la Matriz RTM y la tabla de Bug Tracking.*
+* **En pantalla:** *Juan Pablo en cámara + Proyección de Diapositiva 7.*
+
+```
+📺 [▶ PASAR A DIAPOSITIVA 7: Plan ISO 29119-3, Matriz RTM y Bitácora de Bugs]
+Puntos clave en pantalla:
+- Plan de Pruebas Formal PLN-QA-SGAP-2026-V1 (Exclusiones justificadas y Criterio de Salida)
+- Matriz RTM Bidireccional (16 casos CP-01 a CP-16 vs 10 requisitos)
+- Bitácora de 4 Defectos Reales Resueltos (BUG-01 a BUG-04)
+```
 
 > **Juan Pablo:**  
 > *"Gracias, Sebastián. En la **Etapa 2**, adoptamos los estándares internacionales **IEEE 829** y la moderna norma **ISO/IEC/IEEE 29119-3:2021** para formular nuestro Plan de Pruebas de 3 páginas.*  
@@ -125,7 +190,7 @@
 > *Documentamos **16 Casos de Prueba (CP-01 al CP-16)** con precondiciones, pasos y aserciones. Pero lo más valioso fue la construcción de la **Matriz de Trazabilidad de Requisitos (RTM)**:*  
 > * *La RTM nos dio **trazabilidad bidireccional**: nos aseguró que cada uno de los 10 requisitos funcionales tuviera al menos un caso de prueba asociado (evitando 'requisitos huérfanos'), y a la inversa, que cada prueba automatizada en JUnit tuviera una justificación directa en las necesidades del cliente (evitando 'pruebas huérfanas' que consumen tiempo de cómputo sin aportar valor).*  
 >  
-> *Asimismo, mantuvimos una **Bitácora de Defectos Reales (Bug Tracking Log)** donde documentamos los errores encontrados y corregidos durante el ciclo de vida del proyecto:*  
+> *Asimismo, en la tabla derecha de la diapositiva pueden observar nuestra **Bitácora de Defectos Reales (Bug Tracking Log)** donde documentamos los errores encontrados y corregidos durante el ciclo de vida del proyecto:*  
 > * *El **BUG-01:** la discrepancia decimal por el uso inicial de primitivos `double` en recargos, solucionada migrando a `BigDecimal`.*  
 > * *El **BUG-02:** el riesgo del operador de frontera en el tope de mora, blindado con `compareTo`.*  
 > * *El **BUG-03:** caídas por `NullPointerException` si el usuario enviaba nombres vacíos o espacios en la consola, resuelto con validación defensiva mediante `.trim()` e `isBlank()`.*  
@@ -136,13 +201,27 @@
 ---
 
 ### 📌 PARTE 5: DEMOSTRACIÓN PRÁCTICA EN VIVO (LIVE DEMO) (7:30 – 10:30)
-* **Voz:** Ambos (Turnos en vivo con acciones coordinadas)
-* **En pantalla:** *Compartir pantalla completa con Terminal de comandos abierta y visible con texto grande.*
+* **Voz:** Ambos (Turnos coordinados)
+* **En pantalla:** *Primero mostrar Diapositiva 8, luego alternar a la Terminal de comandos en vivo.*
 
-> **Jhoan Sebastián (Toma el control de la terminal):**  
-> *"Profesor David, en este momento estamos compartiendo la terminal en vivo, ubicados en la raíz del repositorio del proyecto `sgap-aceptacion`.*  
->  
-> *Para cumplir la directriz de la Etapa 3 sobre automatización, ejecutamos la suite oficial mediante el wrapper de Maven:*  
+```
+📺 [▶ PASAR A DIAPOSITIVA 8: Suite JUnit 5 (92 Tests) y Demostración en Vivo]
+Puntos clave en pantalla:
+- Métricas de ejecución Maven Surefire: 92 tests en 3.8s (0 fallos, 0 errores)
+- Justificación de qué pruebas quedaron manuales
+- Aviso: "PASO A DEMOSTRACIÓN EN VIVO"
+```
+
+> **Jhoan Sebastián:**  
+> *"En la **Diapositiva 8** resumimos la arquitectura de automatización con JUnit Jupiter 5.10.2: 92 pruebas distribuidas en 4 clases. A continuación, dejamos la presentación y **pasamos a compartir la terminal en vivo** para ejecutar el software."*
+
+```
+💻 [CAMBIAR EN PANTALLA: ABRIR LA TERMINAL EN VIVO EN PANTALLA COMPLETA]
+Ubicación: Raíz del proyecto /home/sebastian/Documentos/Pruebas_ingnieria/sgap-aceptacion
+```
+
+> **Jhoan Sebastián (ejecuta en la terminal):**  
+> *"Profesor David, en este momento estamos en la terminal en vivo. Ejecutamos la suite oficial mediante el wrapper de Maven:*  
 > `sh ./mvnw test -o`  
 > *(o `mvn test`).*  
 >  
@@ -155,12 +234,12 @@
 > * *Ejecutó `AplicacionSGAPTest` con **14 pruebas**, testeando la consola como prueba de sistema.*  
 > * *Y ejecutó `CriteriosAceptacionSGAPTest` con **9 pruebas BDD**, validando los escenarios Dado-Cuando-Entonces.*  
 >  
-> *Resultado oficial:* **92 pruebas ejecutadas, 0 Fallures, 0 Errors, 0 Skipped. Éxito del 100% y BUILD SUCCESS.**  
+> *Resultado oficial:* **92 pruebas ejecutadas, 0 Failures, 0 Errors, 0 Skipped. Éxito del 100% y BUILD SUCCESS.**  
 >  
 > *Ahora mi compañero Juan Pablo va a lanzar la aplicación interactiva para comprobar cómo responde la consola ante casos de frontera y manejo defensivo."*
 
-> **Juan Pablo (Ejecuta la consola en la terminal):**  
-> *"Lanzamos la consola compilada con:*  
+> **Juan Pablo (ejecuta la consola en la terminal):**  
+> *"Lanzamos la consola interactiva con:*  
 > `java -cp target/classes co.edu.eam.sgap.AplicacionSGAP`  
 >  
 > *1. Escribimos `ayuda`:*  
@@ -180,16 +259,26 @@
 > * *Escribo: `estadopago 2026-11-10;2026-11-08` &rarr; Faltan 2 días para el corte, y el sistema clasifica: `Estado del pago: POR_VENCER`.*  
 >  
 > *Escribimos `salir` y la aplicación termina de forma limpia.*  
-> *Como se evidencia, la aplicación es robusta, rápida y cumple estrictamente las reglas de negocio."*
+> *Como se evidencia, la aplicación es robusta, rápida y cumple estrictamente las reglas de negocio.*  
+>  
+> *Regresamos a las diapositivas para la fase de calidad y cierre."*
 
 ---
 
 ### 📌 PARTE 6: CALIDAD DEL SOFTWARE: ISO 25010, CMMI Y DEFINITION OF DONE (10:30 – 12:30)
 * **Voz:** Juan Pablo Bedoya Payán
-* **En pantalla:** *Juan Pablo en cámara + Documento PDF en la Sección de Calidad (ISO 25010, CMMI y las 7 condiciones de la DoD).*
+* **En pantalla:** *Juan Pablo en cámara + Proyección de Diapositiva 9.*
+
+```
+📺 [▶ REGRESAR A PANTALLA: DIAPOSITIVA 9 — Estándares ISO/IEC 25010 y Madurez CMMI v2.0]
+Puntos clave en pantalla:
+- 3 Características ISO 25010: Adecuación Funcional, Fiabilidad y Mantenibilidad
+- Autoevaluación CMMI: Nivel 2 (Gestionado / Managed) justificado
+- Plan de Acción para Escalar a Nivel 3 (Definido)
+```
 
 > **Juan Pablo:**  
-> *"En la **Etapa 4**, evaluamos SGAP a la luz de los modelos y estándares de calidad de la industria:*  
+> *"En la **Diapositiva 9**, correspondiente a la **Etapa 4**, evaluamos SGAP a la luz de los modelos y estándares de calidad de la industria:*  
 >  
 > *1. **Modelo de Calidad ISO/IEC 25010:** Seleccionamos tres características que justificamos técnicamente para este tipo de software:*  
 > * * **Adecuación Funcional:** No basta con que el software tenga muchas pantallas; evaluamos la **corrección funcional**, asegurando que los cálculos matemáticos con `BigDecimal` liquiden exactamente los centavos reales sin desfalcos.*  
@@ -202,29 +291,42 @@
 > * *Pero no somos Nivel 3 todavía porque estas prácticas las gestionamos a nivel de nuestro equipo de proyecto; aún no están institucionalizadas como una política corporativa estandarizada para toda la facultad o la universidad.*  
 > * *Para ascender al **Nivel 3 (Definido)**, propusimos un plan de acción concreto: convertir nuestras plantillas de prueba en activos de proceso reutilizables, integrar tuberías de CI/CD automáticas con GitHub Actions y fijar umbrales organizacionales obligatorios de cobertura de ramas mayores al 90%.*  
 >  
-> *3. **Definición de Terminado (Definition of Done - DoD):**  
-> *En Scrum, una funcionalidad no está lista cuando el desarrollador dice 'ya programé el método'. Redactamos **7 condiciones obligatorias y verificables**: código limpio según estándares Java, compilación limpia en Maven, 100% de tests verdes en JUnit 5, cobertura de ramas $\ge 90\%$, criterios BDD cumplidos, revisión cruzada de código por pares (Peer Review) donde ninguno hace commit a `main` sin la aprobación del otro, y manuales actualizados.*  
->  
-> *Doy paso a Sebastián para las conclusiones y cierre de la sustentación."*
+> *Doy paso a Sebastián para la Definition of Done y el cierre de la sustentación."*
 
 ---
 
 ### 📌 PARTE 7: CONCLUSIONES, LECCIONES APRENDIDAS Y CIERRE (12:30 – 14:00)
-* **Voz:** Jhoan Sebastián Agudelo Mejía & Juan Pablo Bedoya Payán (Ambos visibles en cámara a medio cuerpo)
-* **En pantalla:** *Cámara compartida con ambos integrantes visibles.*
+* **Voz:** Jhoan Sebastián Agudelo Mejía & Juan Pablo Bedoya Payán (Ambos)
+* **En pantalla:** *Proyección de Diapositiva 10, y al final cámara compartida a medio cuerpo.*
+
+```
+📺 [▶ PASAR A DIAPOSITIVA 10: Definition of Done (DoD) y Conclusiones]
+Puntos clave en pantalla:
+- Las 7 Condiciones de la Definition of Done (DoD)
+- Principales Lecciones de Ingeniería Aprendidas
+- Dictamen Final: APROBADO Y ACEPTADO (92 pruebas exitosas / 0 fallos)
+```
 
 > **Jhoan Sebastián:**  
-> *"Para concluir nuestra sustentación, queremos compartir las dos lecciones aprendidas más significativas que nos deja este proyecto:*  
+> *"En la **Diapositiva 10** presentamos nuestra **Definition of Done (DoD)**:*  
+> *En Scrum, una funcionalidad no está terminada cuando el desarrollador dice 'ya programé el método'. Redactamos **7 condiciones obligatorias y verificables**: código limpio según estándares Java, compilación limpia en Maven, 100% de tests verdes en JUnit 5, cobertura de ramas $\ge 90\%$, criterios BDD cumplidos, revisión cruzada de código por pares (Peer Review) donde ninguno hace commit a `main` sin la aprobación del otro, y manuales actualizados.*  
+>  
+> *Para concluir nuestra sustentación, queremos compartir las dos lecciones aprendidas más significativas que nos deja este proyecto:*  
 >  
 > *La primera es **la falacia de las pruebas con valores intermedios**. En el taller inicial vimos cómo probar la edad 25 hacía pasar un código que en realidad estaba roto para la edad 18; y en SGAP comprobamos que probar 10 o 15 días de mora jamás habría descubierto si el tope del 15% funcionaba o no. Son las técnicas formales de Análisis de Valores Límite y Cobertura de Caminos de McCabe las que verdaderamente exponen los defectos antes de que lleguen a producción.*  
 >  
 > *La segunda lección es que **la calidad no es un evento que se hace al final del desarrollo**, sino una disciplina arquitectónica que debe estar presente desde el modelado inmutable de datos, la selección de tipos numéricos adecuados y la automatización continua en cada commit.*  
->  
+
+```
+🎥 [CAMBIO DE PANTALLA: CÁMARA COMPLETA CON AMBOS INTEGRANTES A MEDIO CUERPO]
+```
+
+> **Jhoan Sebastián (en cámara):**  
 > *Con base en las **92 pruebas automatizadas ejecutadas con 0 fallos**, emitimos un dictamen unánime de aprobación técnica para el sistema SGAP.*  
 >  
 > *Agradecemos al profesor David Cano Baquero por su exigencia y acompañamiento durante este semestre.*  
 >  
 > *¡Muchísimas gracias por su atención!"*
 
-> **Juan Pablo:**  
+> **Juan Pablo (en cámara):**  
 > *"Muchas gracias, profesor, y quedamos atentos a cualquier inquietud o retroalimentación."*
