@@ -120,7 +120,6 @@ sgap-aceptacion/
 ├── README.md                                 # Guía técnica completa de compilación y ejecución
 ├── ISII_Grupo1_Entregable.pdf                # DOCUMENTO FORMAL PDF DEL PLAN DE ASEGURAMIENTO DE CALIDAD
 ├── Documento_Entregable_Final.html           # Fuente estructurada HTML/CSS del informe
-├── SUSTENTACION_15_MINUTOS.md                # Guion oficial y cronograma minuto a minuto para el video
 ├── src/
 │   ├── main/java/
 │   │   ├── AplicacionSGAP.java               # Punto de entrada / Interfaz CLI de consola interactiva
